@@ -7,26 +7,36 @@
 
 </head>
 <style>
-   
-    @media screen and (min-width:325px) and (max-width:425px){
-
+    .to:hover{
+        border: 10px solid blue;
     }
-    @media screen and (min-width:325px) and (max-width:425px) {
-        
-        .img5,.img6,.img7,.img8,.img9,.img10,.img11,.img12,.img13,.ti1,.ti2,.ti3,.ti4,.ti5,.ti6,.ti7,.ti8,.ti9,.ti10,.ti11,.ti12,.ti13,.ti14,.ti15,.ti16,.ti17{
+
+    @media screen and (min-width:768px){
+        #border,.border1{
             display: none;
-           
         }
     }
+   
+  
+
     @media screen and (min-width:425px) and (max-width:768px){
         .img1,.img2,.img3,.img4,.vi1,.vi2,.vi3,.vi4{
             display: none;
+     
         }
+
+       
+     
+
+
        
     }
     @media screen and (min-width:0px) and (max-width:325px) {
+        #border,.border1{
+            display: none;
+        }
         
-        .img1,.img2,.img3,.img4,.vi1,.vi2,.vi3,.vi4,.img5,.img6,.img7,.img8,.img9,.img10,.img11,.img12,.img13{
+        .img1,.img2,.img3,.img4,.vi1,.vi2,.vi3,.vi4,.img5,.img6,.img7,.img8,.img9,.img10,.img11,.img12,.img13,.to{
             display: none;
         }
     }
@@ -35,6 +45,13 @@
       
    
     @media screen and (min-width:325px) and (max-width:425px) {
+        .img5,.img6,.img7,.img8,.img9,.img10,.img11,.img12,.img13,.ti1,.ti2,.ti3,.ti4,.ti5,.ti6,.ti7,.ti8,.ti9,.ti10,.ti11,.ti12,.ti13,.ti14,.ti15,.ti16,.ti17,.to{
+            display: none;
+           
+        }
+        .border1{
+            display: none;
+        }
         table,tr,td{
         
             border: 10px solid red;
@@ -112,6 +129,16 @@
         }
     }
     @media screen and (min-width:425px) and (max-width:768px){
+        #border{
+            display: none;
+        }
+
+        .img1,.img2,.img3,.img4,.vi1,.vi2,.vi3,.vi4,.to{
+            display: none;
+     
+        }
+
+
          table,tr,td{
             border: 10px solid red;
             border-collapse: collapse;
@@ -163,22 +190,24 @@
 
     }
 
+ 
 
 }
 
 </style>
 <div>
 <body>
+    <img src="./total1.jpg" class="to">
     
     
     
     
-    <table>
+    <table id="border">
         <tr>
             <td class="tb"><img src="./images.jpeg" alt="" class="vi1"><video src="./attack1.mp4" muted autoplay class="img1"></video></td>
             <td class="haik2"><img src="./jiju1.jpg" alt="" class="img2"><video src="./haikyu 2.mp4" class="vi2" muted autoplay></video></td>
         </tr>
-        <tr>
+        <tr id="hide">
             <td class="haik3" ><img src="./main3.jpeg" alt="img3"><video src="./haikyu 3.mp4" class="vi3" muted autoplay></video></td>
             <td class="haik4"><img src="./levi1.jpeg" alt="" class="img4"><video src="./haikyu 4.mp4" class="vi4" muted autoplay></video></td>
         </tr>
@@ -187,7 +216,7 @@
 
 
 
-    <table>
+    <table class="border1">
 
 
       
@@ -242,8 +271,6 @@
         <!-- </tr> -->
     <!-- </table> -->
 
-    
-    
     
     
     
